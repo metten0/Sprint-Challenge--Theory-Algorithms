@@ -104,7 +104,7 @@ BigO notation is O(n).  Despite being a recursive call, this algorithm is linear
 
 _answer:_  
 
-BigO notation is    
+BigO notation is O(n) for reasons similar to number 7.  
 
 # Exercise 2  
 
