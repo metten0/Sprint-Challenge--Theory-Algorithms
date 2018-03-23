@@ -1,11 +1,12 @@
 # Exercise 1
 
 1.   
-    a = 0;  
+    ```
+    a = 0;
+    while (a < n * n * n)
+    a = a + n * n;  
 
-    while (a < n * n * n)  
-
-    a = a + n * n;   
+    ```   
 
 
 _answer:_  
@@ -112,6 +113,8 @@ BigO notation is O(n) for reasons similar to number 7.
 1. Given an array a of n numbers, design a linear running time algorithm to find the maximum value of a[j] - a[i], where j ≥ i.  
 
 _answer:_  
+
+
 
 2. Suppose that you have an n-story building and plenty of eggs. Suppose also that an egg is broken if it is thrown off floor f or higher, and unbroken otherwise. Devise a strategy to determine the value of f such that the number of dropped eggs is minimized.  
 
