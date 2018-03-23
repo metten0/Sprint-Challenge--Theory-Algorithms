@@ -1,9 +1,12 @@
 #Exercise 1
 
 1.   
-    a = 0;
-    while (a < n * n * n)
-    a = a + n * n;  
+    a = 0;  
+
+    while (a < n * n * n)  
+
+    a = a + n * n;   
+     
 
 _answer:_  
 
