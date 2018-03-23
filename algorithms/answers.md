@@ -70,9 +70,9 @@ _answer:_
 
 _answer:_  
 
-#Exercise 3  
+#Exercise 3# 
 
-##Below is the the pseudo-code for the Quicksort algorithm:  
+##Below is the the pseudo-code for the Quicksort algorithm:## 
 
     function quicksort(array)
     if length(array) <= 1
