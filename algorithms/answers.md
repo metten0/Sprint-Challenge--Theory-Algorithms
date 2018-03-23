@@ -1,4 +1,4 @@
-#Exercise 1
+# Exercise 1
 
 1.   
     a = 0;  
@@ -10,18 +10,26 @@
 
 _answer:_  
 
+BigO notation is O(n), linear time. n^2 steps are taken to reach n^3.
+
 2.  
-    // input array is of length n i = array.length - 1;  
+    // input array is of length n   
+    
+    i = array.length - 1;  
 
     while (array[i] > x && i >= 0)  
 
     i = i/2;   
 
 
-_answer:_  
+_answer:_   
+
+BigO notation is O(logn) because each iteration cuts i by half.   
+
 
 3.  
-    sum = 0;
+    sum = 0;  
+
     for (i = 0; i < Math.sqrt(n) / 2; i++)  
 
     for ( j = i; j < 8 + i; j++)  
@@ -31,7 +39,9 @@ _answer:_
     sum++;  
 
 
-_answer:_  
+_answer:_   
+
+BigO notation is O(sqrt(n)) the algorithm requires O(n^(1/2)) evaluations where the size of input is n. 
 
 4.  
     sum = 0;  
@@ -43,7 +53,9 @@ _answer:_
     sum++;   
 
 
-_answer:_  
+_answer:_   
+
+BigO notation is O(nlogn) because the inner loop in linear and the outer loop doubles in value with each step.
 
 5.  
     sum = 0;  
@@ -59,15 +71,22 @@ _answer:_
              sum++;   
 
 
-_answer:_ 
+_answer:_   
+
+BigO notation is O(n^3) due to the three nested linear loops with (l = k +1; l < 10 + k; l++) being constant. 
 
 6.  
-    bunnyEars = function (bunnies) { // here bunnies === n if (bunnies === 0) return 0;
-    return 2 + bunnyEars(bunnies-1);
+    bunnyEars = function (bunnies) { // here bunnies === n  
+     if (bunnies === 0) return 0;  
+
+    return 2 + bunnyEars(bunnies-1);  
+
     }  
 
 
-_answer:_  
+_answer:_   
+
+BigO notation is O(n).  Despite being a recursive call, this algorithm is linear time because the value of n increases by 1 and then decreases by 1 once the condition is met.
 
 7.  
     search = function (array, arraySize, target) { // here arraySize === n if (arraySize > 0) {  
@@ -83,9 +102,11 @@ _answer:_
      }   
 
 
-_answer:_   
+_answer:_  
 
-#Exercise 2  
+BigO notation is    
+
+# Exercise 2  
 
 
 1. Given an array a of n numbers, design a linear running time algorithm to find the maximum value of a[j] - a[i], where j ≥ i.  
@@ -96,7 +117,7 @@ _answer:_
 
 _answer:_  
 
-#Exercise 3
+# Exercise 3
 
 ##Below is the the pseudo-code for the Quicksort algorithm:
 
