@@ -6,41 +6,58 @@
     while (a < n * n * n)  
 
     a = a + n * n;   
-     
+
 
 _answer:_  
 
 2.  
-    // input array is of length n i = array.length - 1;
-    while (array[i] > x && i >= 0)
-    i = i/2;  
+    // input array is of length n i = array.length - 1;  
+
+    while (array[i] > x && i >= 0)  
+
+    i = i/2;   
+
 
 _answer:_  
 
 3.  
     sum = 0;
-    for (i = 0; i < Math.sqrt(n) / 2; i++)
-    for ( j = i; j < 8 + i; j++)
-    for (k = j; k < 8 + j; k++)
+    for (i = 0; i < Math.sqrt(n) / 2; i++)  
+
+    for ( j = i; j < 8 + i; j++)  
+
+    for (k = j; k < 8 + j; k++)  
+
     sum++;  
+
 
 _answer:_  
 
 4.  
-    sum = 0;
-    for (i = 1; i < n; i *= 2)
-    for (j = 0; j < n; j++)
-    sum++;  
+    sum = 0;  
+
+    for (i = 1; i < n; i *= 2)  
+
+    for (j = 0; j < n; j++)  
+
+    sum++;   
+
 
 _answer:_  
 
 5.  
-    sum = 0;
-    for (i = 0; i < n; i++)
-       for (j = i + 1; j < n; j++)
-         for (k = j + 1; k < n; k++)
-           for (l = k + 1; l < 10 + k; l++)
-             sum++;  
+    sum = 0;  
+
+    for (i = 0; i < n; i++)  
+
+       for (j = i + 1; j < n; j++)  
+
+         for (k = j + 1; k < n; k++)  
+
+           for (l = k + 1; l < 10 + k; l++)  
+
+             sum++;   
+
 
 _answer:_ 
 
@@ -53,12 +70,18 @@ _answer:_
 _answer:_  
 
 7.  
-    search = function (array, arraySize, target) { // here arraySize === n if (arraySize > 0) {
-         if (array[arraySize-1] === target) return true;
-         else return search(array, arraySize-1, target);
-       }
-      return false;
-     }  
+    search = function (array, arraySize, target) { // here arraySize === n if (arraySize > 0) {  
+
+         if (array[arraySize-1] === target) return true;  
+
+         else return search(array, arraySize-1, target);  
+
+       }  
+
+      return false;  
+
+     }   
+
 
 _answer:_   
 
@@ -79,13 +102,13 @@ _answer:_
 
     function quicksort(array)
     if length(array) <= 1
-       return array
-   select and remove a pivot element pivot from array
-   create empty lists less and greater
-   for each x in array
-       if x <= pivot then append x to less
-       else append x to greater
-   return concatenate(quicksort(less), list(pivot), quicksort(greater))    
+       return array  
+       select and remove a pivot element pivot from array  
+       create empty lists less and greater  
+       for each x in array  
+       if x <= pivot then append x to less  
+       else append x to greater  
+       return concatenate(quicksort(less), list(pivot), quicksort(greater))    
 
    1. Suppose we implement quicksort so that the pivot is always chosen to be the first element of the array. What is the running time of this algorithm on an input array that is already sorted? Why?  
    _answer:_  
